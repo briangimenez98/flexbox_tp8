@@ -1,0 +1,244 @@
+*{
+    font-family: "Roboto";
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--griscla);
+}
+/*-------------Header------------*/
+header{
+    background-color: var(--amarillo);
+}
+header .banner{
+    padding-bottom:0px;
+    margin: 0;
+    width:100%
+}
+header .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px
+}   
+header .contenedor .image{
+    width: 50%;
+}
+header .contenedor .barra-busqueda{
+    width: 50%;
+}
+header .barra-busqueda input{
+    width: 80%;
+}
+header .lema1{
+    display: inline-block;
+}
+header .lema1 p{
+    font-size: 12px;
+}
+header nav .ul1, .ul2{
+    display: none;
+}
+nav .burger-menu{
+    display: flex;
+    justify-content: center;
+}
+nav .burger-menu .fa-bars{
+    background-color: var(--celeste);
+    color: var(--griscla);
+    margin: 10px;
+    padding: 12px;
+    border-radius: 8px;
+}
+nav div .banner{
+    width: 100%;
+}
+/*Main*/
+main{
+    width:100%;
+}
+main .cajabanner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+main .cajabanner img{
+    width: 100%;
+}
+main h2.titular{
+    font-size: 24px;
+    text-align: center;
+    margin: 15px 0px 0px;
+}
+main section article{
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ebebeb
+}
+main section article .caja{
+    position: relative
+}
+main section article .caja i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+section article img{
+    width: 100%;
+}
+section article .caja{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 15px; 
+    border-top: 1px solid var(--griscla);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+article .caja .precios{
+    font-size: 18px;
+    width: 30%;
+}
+article .caja .descuentos{
+    font-size: 16px;
+    color: var(--verde);
+    width:70%;
+}
+article .caja .descripcion{
+    display:none;
+}
+article .caja h4{
+    color: var(--grisosc);
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    margin-top: 20%;
+}
+footer section div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fa-user-shield, .fa-gift, .fa-credit-card{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+.caja2{
+    background-color: white;
+    border: solid var(--griscla);
+    margin: 5px;
+    padding: 15px;
+}
+.copyright{
+    color: var(--grisosc)
+}
+@media (min-width:361px) /*Tablet*/{
+
+/*Header*/
+header .contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: none;
+    width: 100%;
+    padding: 20px;
+} 
+header .contenedor .lema1{
+    margin: 10px
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+nav ul.ul1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+nav ul.ul2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a{
+    margin: 0 10px;
+    color: black
+}
+div.burger-menu .fa-bars{
+    display:none;
+}
+        /*Main*/
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+main section article{
+    width: 40%;
+}
+section article .caja{
+    width: 100%;
+    box-shadow: none;
+    flex-wrap: wrap;
+    justify-self:flex-end;
+}
+section article .caja .precios{
+
+}
+section article .caja span.descuentos{
+    text-align: right;
+}
+article .caja .descripcion{
+    display:block;
+}
+}
+@media(min-width:769px) /*Desktop*/{
+    .contenedor .image{
+        padding: 15px;
+    }
+    main section {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 0 50px;
+    }
+    .navi{
+        display: inline;
+    }
+    .fa-bars{
+        display:none;
+    }
+    .descripcion{
+        display:block;
+    }
+    .caja{
+        flex-wrap: wrap;
+        box-shadow: none;
+    }
+    section article .caja span.descuentos{
+        text-align: right;
+    }
+}
